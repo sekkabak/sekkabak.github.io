@@ -1,9 +1,357 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Test</title>
-</head>
-<body>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="My portfolio">
+        
+        <meta name="author" content="Cezary Bąk">
+		
+        <title>Bąk Cezary Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+		
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/component.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/media-queries.css">
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300' rel='stylesheet' type='text/css'>
+        <script src="js/modernizr-2.6.2.min.js"></script>
+    </head>
+	
+    <body id="body">
+		<div id="loading-mask">
+			<div class="loading-img">
+				<img alt="Meghna Preloader" src="img/preloader.svg" style="margin-top: -5%"/>
+			</div>
+		</div>
+        <header id="navigation" class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#body">
+						<h1 id="logo">
+						</h1>
+					</a>
+                </div>
+                <nav class="collapse navbar-collapse navbar-right" role="Navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class="current"><a href="#navigation-sticky-wrapper">O mnie</a></li>
+                        <li><a href="#my-skills">Moje umiejętności</a></li>
+                        <li><a href="#showcase">Moje prace</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="hello" class="bg-one">
+        	<div class="container">
+				<div class="row">
+						<p style="font-size: 78px"><b>Witam !</b></p>
+				</div>
+			</div>
+        </section>
+		<section id="about" class="bg-one">
+			<div class="container">
+				<div class="row">
+					<div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
+						<h2>O <span class="color">mnie</span></h2>
+						<div class="border"></div>
+					</div>
+					<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" >
+						<div class="wrap-about">							
+							<div class="icon-box">
+								<i class="fa fa-lightbulb-o fa-4x"></i>
+							</div>
+						</div>
+					</div> 
+					<div class="col-md-5 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="250ms">
+						<div class="wrap-about">
+							<div class="about-content">
+								<p>Nazywam się Bąk Cezary. Obecnie jestem na 3 roku <br />w Zespole Szkół im. Stanisława Staszica o profilu "Technik Informatyk".
+								</p>
+								<p>
+									Interesuję się tworzeniem wszelkiego rodzaju oprogramowania. Największe doświadczenie posiadam zaś w pisaniu witryn internetowych lub w tworzeniu ich za pomocą narzędzi CMS.
+								</p>
+							</div>
+						</div>
+					</div> 
+				</div>
 
-</body>
+				<hr>
+
+				<div  class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
+						<div class="counters-item">
+							<div>
+							    <span data-speed="3000" data-to="10">20</span>
+							</div>
+							<i class="fa fa-folder-open fa-3x"></i>
+							<h3>Projektów rozpoczętych</h3>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
+						<div class="counters-item">
+							<div>
+							    <span data-speed="3000" data-to="10">10</span>
+							</div>
+							<i class="fa fa-check-square fa-3x"></i>
+							<h3>Projektów zakończonych</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="my-skills" class="parallax-section">
+			<div class="container">
+				<div class="row wow fadeInDown" data-wow-duration="500ms">
+					<div class="title text-center">
+						<h2>Moje <span class="color">Umiejętności</span></h2>
+						<div class="border"></div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+						<div class="skill-chart text-center">
+							<h3><img src="icons/html5.svg" alt="HTML5" height="30" width="30"> HTML 5</h3>
+							<p>Osobiście myślę, że dobrze opanowałem język znaczników HTML i szybko odczytuje obcy kod.</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="skill-chart text-center">
+							<h3><img src="icons/javascript.svg" alt="Javascript" height="30" width="30"> JavaScript</h3>
+							<p>Napisałem w tym języku tysiące lini kodu, na strony jak i do silnika gier Unity, więc myślę, że radzę sobie w nim bardzo dobrze.</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="skill-chart text-center">
+							<h3><img src="icons/css3.svg" alt="CSS" height="30" width="30"> CSS</h3>
+							<p>Może nie znam wszystkich selektorów jak i funkcji wbudowanych w CSS3 lecz sądzę, że ten język mam przyswojony w podobnym stopniu co HTML.</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="skill-chart text-center">
+							<h3><img src="icons/php.svg" alt="PHP" height="30" width="30"> PHP</h3>
+							<p>
+								Język serwerowy PHP mam opanowany w bardzo dobrym stopniu, niestety nie jestem przysfojony z żadnym frameworkiem dla tego języka.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row wow fadeInDown" data-wow-duration="500ms">
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="skill-chart text-center">
+							<h3><img src="icons/jquery_logo.svg" alt="jQuery" height="30" width="30"> jQuery</h3>
+							<p>
+							Z jQuery zwykłem pracować zawsze, gdy była taka możliwość, ułatwiając sobie tym pracę w JavaScript.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="skill-chart text-center">
+							<h3><img src="icons/mysql.svg" alt="jQuery" height="30" width="30"> MySQL</h3>
+							<p>
+							Wszystkie operacje na bazach danych wykonywałem za pomocą MySQL. Znam podstawy języka SQL.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+						<div class="skill-chart text-center">
+							<h3><img src="icons/wordpress.svg" alt="Wordpress" height="30" width="30"> Wordpress</h3>
+							<p>
+							Wordpress nie jest trudny w obsłudze jak i modyfikowaniu go za pomocą wszelakich pluginów. Cięższą pracą jest pisanie tych pluginów, co zresztą wiem, ponieważ sam próbowałem napisać szablon od podstaw.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="skill-chart text-center">
+							<h3><img src="icons/photoshop.svg" alt="Photoshop" height="30" width="30"> Photoshop</h3>
+							<p>
+							Photoshop nie jest mi obcy, potrafię stworzyć jak i modyfikować różne prostsze grafiki. Lecz z tymi bardziej zaawansowanymi wyzwaniami nie dałbym sobie rady. </p>
+						</div>
+					</div>
+					</div>
+					<div class="row wow fadeInDown" data-wow-duration="500ms">
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+						<div class="skill-chart text-center">
+							<h3><img src="icons/visualstudio.svg" alt="C#" height="30" width="30"> C#</h3>
+							<p>
+							C# i platforma .NET to język jak i platforma, od której zaczynałem swoje przygody z programowaniem. Niestety zaniedbałem moje umiejętności w tym języku, na rzecz innych języków wymienionych wyżej. Mam zaś zamiar powrócić do tego języka i bardziej rozwijać moje umiejętności w tym kierunku, jak i webowe i desktopowe.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="skill-chart text-center">
+							<h3><img src="icons/sass.svg" alt="Sass" height="30" width="30"> Sass</h3>
+							<p>
+								Język Sass jest postprocesorem języka CSS który dobrze znam, lecz posiada wiele funkcjonalności których się dopiero uczę i wdrażam do moich projektów.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="skill-chart text-center">
+							<h3><img src="icons/git.svg" alt="GIT" height="30" width="30"> Git</h3>
+							<p>
+								Na systemie Git nie znam się zbyt dobrze, lecz potrafię z niego korzystać, pracować na gałęziach, łączyć i porównywać, wypychać swoje postępy w pracy.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="skill-chart text-center">
+							<h3><img src="icons/unity_small.svg" alt="Unity" height="30" width="30"> Unity</h3>
+							<p>
+								Wielu programistów zaczynało swoje przygody od pisania prostych gier. Ja też tak zaczynałem. W Unity starałem się tworzyć rozmaite gry lub animacje. Moje gry nie ujrzały światła dziennego aż do dziś.
+							</p>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="showcase">
+			<div class="container">
+				<div class="row wow fadeInDown" data-wow-duration="500ms">
+					<div class="col-lg-12">
+						<div class="title text-center">
+							<h2>Moje <span class="color">prace</span></h2>
+							<div class="border"></div>
+						</div>
+						<div class="portfolio-filter clearfix">
+							<ul class="text-center">
+							    <li><a href="javascript:void(0)" class="filter" data-filter="all">Wszystkie</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".desk">Aplikacje okienkowe</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".app">Aplikacje internetowe</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".web">Witryny internetowe</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".photoshop">Prace graficzne</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".comp">Prace konkursowe</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio-item-wrapper wow fadeInUp" data-wow-duration="500ms">
+                <ul id="og-grid" class="og-grid">
+					<li class="mix app web comp">
+						<a href="https://sekkabak.github.io/Zobaczyc-MatematykeV1/" data-largesrc="img/portfolio/zobmat.jpg" data-title="Zobaczyć Matematykę V1"
+
+						data-description='Aplikacja napisana na cele konkursu organizowanego przez AGH w Krakowie "Zobaczyć matematykę"'>
+
+							<img src="img/portfolio/zobmat.jpg" alt="Zobaczyć Matematykę V1">
+							<div class="hover-mask">
+								<h3>Zobaczyć Matematyke V1</h3>
+							</div>
+						</a>
+					</li>
+					<li class="mix app web comp">
+						<a href="https://sekkabak.github.io/Zobaczyc-MatematykeV2/" data-largesrc="img/portfolio/zobmat.jpg" data-title="Zobaczyć Matematyke V2"
+
+						data-description='Aplikacja napisana na cele konkursu organizowanego przez AGH w Krakowie "Zobaczyć matematykę"'>
+
+							<img src="img/portfolio/zobmat.jpg" alt="Zobaczyć Matematyke V2">
+							<div class="hover-mask">
+								<h3>Zobaczyć Matematyke V2</h3>
+							</div>
+						</a>
+					</li>
+					<li class="mix web app">
+						<a href="https://github.com/sekkabak/TestSchoolPlatform" data-largesrc="img/portfolio/test.jpg" data-title="Aplikacja testowa"
+
+						data-description='Aplikacja wykonana na zlecenie szkoły, aktualnie trwa kończenie projektu.'>
+
+							<img src="img/portfolio/test.jpg" height="20" alt="Aplikacja testowa">
+							<div class="hover-mask">
+								<h3>Aplikacja testowa</h3>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>	
+		</section>
+		<section id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+						<h2>Skontaktuj się ze <span class="color">mną</span></h2>
+						<div class="border"></div>
+					</div>
+					<div class="contact-info col-md-12 wow fadeInUp" data-wow-duration="500ms">
+						<h3>Dane kontaktowe</h3>
+						<br/>
+						<div class="contact-details">
+							<div class="con-info clearfix">
+								<i class="fa fa-home fa-lg"></i>
+								<span>Staszów, Polska</span>
+							</div>
+							
+							<div class="con-info clearfix">
+								<i class="fa fa-phone fa-lg"></i>
+								<span>Telefon: 534 582 133</span>
+							</div>
+							
+							<div class="con-info clearfix">
+								<i class="fa fa-envelope fa-lg"></i>
+								<span>Email: sekkabak@gmail.com</span>
+							</div>
+						</div>
+					</div>
+					<br/>
+					<br/>
+					<br/>
+				</div>
+			</div>
+			<div class="google-map wow fadeInDown" data-wow-duration="500ms">
+				<div id="map-canvas"></div>
+			</div>	
+		</section>
+		<footer id="footer" class="bg-one">
+			<div class="container">
+			    <div class="row wow fadeInUp" data-wow-duration="500ms">
+					<div class="col-lg-12">
+						<div class="social-icon">
+							<ul>
+								<li><a href="https://www.facebook.com/cezary.bak.731"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://www.linkedin.com/in/cezary-b%C4%85k-4a1951114/"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="https://github.com/sekkabak"><i class="fa fa-github"></i></a></li>
+								<li><a href="http://stackoverflow.com/users/5862150/b-caesar"><i class="fa fa-stack-overflow"></i></a></li>
+								
+							</ul>
+						</div>
+						<div class="copyright text-center">
+							<p>Created by <span class="color">Bąk Cezary</span> 2017</p>
+							<p>Inspired by Meghna Template</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<a href="javascript:;" id="scrollUp">
+			<i class="fa fa-angle-up fa-2x"></i>
+		</a>
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.ba-cond.min.js"></script>
+		<script src="js/jquery.parallax-1.1.3.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.mixitup.min.js"></script>
+		<script src="js/jquery.appear.js"></script>
+		<script src="js/jquery.easing-1.3.pack.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCtAS8bl3P9ITjWTUnP9XUVJbMEi4yfmn4"></script>
+		<script src="js/jquery.nav.js"></script>
+		<script src="js/jquery.sticky.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/grid.js"></script>
+		<script src="js/custom.js"></script>
+    </body>
 </html>
