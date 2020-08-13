@@ -62,5 +62,5 @@ Vue.component('project-component', {
             addEventListenerToElem('more-' + this.$props.postName, this.loadMore);
         }
     },
-    template: /* html */ `<div class="uk-container uk-container-small project" v-html="postHtml"></div>`
+    template: /* html */ `<div class="uk-container uk-container-small uk-card-default project" v-html="postHtml"></div>`
 })
