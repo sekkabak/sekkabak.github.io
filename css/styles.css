@@ -1,3 +1,16 @@
 .footer > nav {
     margin-bottom: 0;
 }
+
+.project {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.project > h1 > a {
+    color: #333;
+}
+
+.project img {
+    margin: 5px;
+}

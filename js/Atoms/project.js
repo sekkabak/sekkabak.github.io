@@ -1,29 +1,66 @@
+function addEventListenerToElem(id, callback) {
+    const el = document.getElementById(id);
+    if (el) {
+        el.addEventListener('click', callback)
+    }
+}
+
 Vue.component('project-component', {
-    template: /* html */ `    
-        <div class="uk-container uk-container-small">
-            <h3>
-                <a href="">Future Blocks</a>
-                <small>April 2000</small>
-            </h3>
-            <p class="tags">
-                <span class="uk-label">Python</span>
-                <span class="uk-label">JS</span>
-                <span class="uk-label">Machine learning</span>
-            </p>
-            <div class="description">
-                <p class="uk-text-lead">Tetris clone that I wrote long ago in high school.</p>
-                <div class="project-summary">
-                    <p>I wrote TONS of programs in QBasic throughout high school. Most of them are lost forever, but a few
-                        have survived. I've put a couple programs, including this one, on the Internet Archive for eternal
-                        posterity, and there you can play them in the browser. This is a simple Tetris clone but it even
-                        includes a computer player that plays quite well!</p>
-                </div>
-                <p class="project-links">
-                    Links:
-                    <a href="https://github.com/fogleman/FutureBlocks">GitHub</a> •
-                    <a href="https://archive.org/details/TETRIS.EXE">Play Online!</a>
-                </p>
-            </div>
-        </div>
-    `
+    props: ['postName'],
+    data() {
+        return {
+            postData: "",
+            postHtml: ""
+        }
+    },
+    watch: {
+        postData: function (newPostData, oldPostData) {
+            this.postHtml = marked(newPostData);
+        }
+    },
+    created: function () {
+        this.getPost();
+    },
+    updated: function () {
+        addEventListenerToElem('more-' + this.$props.postName, this.loadMore)
+    },
+    methods: {
+        getPost: function () {
+            const that = this;
+            const xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    that.postData = this.responseText;
+                }
+            };
+            xhr.open('GET', 'projects/' + this.$props.postName + '.md');
+            xhr.send();
+        },
+        loadMore: function (event) {
+            const that = this;
+            const button = event.target;
+            const xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var div = document.createElement("div");
+                    div.className = "more";
+                    div.innerHTML = marked(this.responseText);
+                    button.parentNode.replaceChild(div, button);
+
+                    addEventListenerToElem('less-' + that.$props.postName, that.loadLess)
+                }
+            };
+            xhr.open('GET', 'projects/' + this.$props.postName + '-more.md');
+            xhr.send();
+        },
+        loadLess: function (event) {
+            let div = event.target;
+            while (div.className !== "more") {
+                div = div.parentNode;
+            }
+            div.innerHTML = '<button class="uk-button uk-button-default" id="more-' + this.$props.postName + '">Read more...</button>';
+            addEventListenerToElem('more-' + this.$props.postName, this.loadMore);
+        }
+    },
+    template: /* html */ `<div class="uk-container uk-container-small project" v-html="postHtml"></div>`
 })

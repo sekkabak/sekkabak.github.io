@@ -3,13 +3,13 @@ const projectsPage = Vue.component('projects-page', {
         return {
             projects: [
                 {
-                    id: 1,
-                    name: 'hello1'
+                    id: 2,
+                    name: 'zobaczyc-matematyke2'
                 },
                 {
-                    id: 2,
-                    name: 'hello2'
-                },
+                    id: 1,
+                    name: 'zobaczyc-matematyke1'
+                }
             ]
         }
     },
@@ -19,7 +19,7 @@ const projectsPage = Vue.component('projects-page', {
                 <template v-if="index > 0">
                     <hr>
                 </template>
-                <project-component :key="project.id"></project-component>
+                <project-component :key="project.id" v-bind:postName="project.name"></project-component>
             </template>
         </div>
     `
