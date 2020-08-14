@@ -43,7 +43,7 @@ const resumePage = Vue.component('resume-page', {
             <div class="uk-container uk-container-small">
                 <h2>Experience</h2>
                 <h3>Back-end developer at <a href="https://arkonsoft.pl/">Arkonsoft</a></h3>
-                <h4 style="margin-top: 0;">May 2017 - October 2018 <small>1 year, 5 months</small></h4>
+                <h4 style="margin-top: 0;">May 2017 - October 2018 <small>1 year, 6 months</small></h4>
                 <ul class="uk-list uk-list-disc">
                     <li>Creating and editing WordPress and WooCommerce plugins</li>
                     <li>Creating and editing Prestashop plugins</li>
