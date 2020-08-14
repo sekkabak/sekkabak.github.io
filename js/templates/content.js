@@ -1,10 +1,11 @@
 Vue.component('content-component', {
-    data() {
-        return {
-            currentPage: projectsPage
-        }
-    },
+    props: ['currentPage'],
+    // data() {
+    //     return {
+    //         currentPage: projectsPage
+    //     }
+    // },
     template: /* html */ `
-    <div :is="currentPage"></div>
+    <div class="content" :is="currentPage"></div>
     `,
 })

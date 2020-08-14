@@ -1,5 +1,13 @@
+html, body, body > div {
+    height: 100%;
+}
+
 .footer > nav {
     margin-bottom: 0;
+}
+
+.content {
+    min-height: 60%;
 }
 
 .project {
@@ -13,4 +21,13 @@
 
 .project img {
     margin: 5px;
+}
+
+.resume {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.resume .uk-list > * > ul, .uk-list > :nth-child(n+2) {
+    margin: 0;
 }

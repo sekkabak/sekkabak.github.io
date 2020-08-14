@@ -1,12 +1,13 @@
 Vue.component('header-component', {
-    template: /* html */ `    
+    props: ['setPage'],
+    template: /* html */ `
         <div class="header">
             <nav class="uk-navbar-container uk-margin uk-padding" uk-navbar>
                 <div class="uk-navbar-center">
                     <div class="uk-navbar-center-left">
                         <ul class="uk-navbar-nav">
-                            <li><a href="/">Projects</a></li>
-                            <li><a href="/WIP.html">Resume</a></li>
+                            <li><a href="#projects" v-on:click.stop="setPage(0)">Projects</a></li>
+                            <li><a href="#resume" v-on:click.stop="setPage(1)">Resume</a></li>
                         </ul>
                     </div>
                     <a class="uk-navbar-item uk-logo" href="/">
@@ -14,8 +15,8 @@ Vue.component('header-component', {
                     </a>
                     <div class="uk-navbar-center-right">
                         <ul class="uk-navbar-nav">
-                            <li><a href="/WIP.html">Contact</a></li>
-                            <li><a href="/WIP.html">About</a></li>
+                            <li><a href="#contact" v-on:click.stop="setPage(2)">Contact</a></li>
+                            <li><a href="#about" v-on:click.stop="setPage(3)">About</a></li>
                         </ul>
                     </div>
                 </div>
