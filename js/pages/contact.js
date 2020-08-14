@@ -5,7 +5,7 @@ const contactPage = Vue.component('contact-page', {
                 You can reach me by:
                 <ul class="uk-list uk-list-disc">
                     <li>Email: <a href="mailto: sekkabak@gmail.com">sekkabak@gmail.com</a></li>
-                    <li>Linked: <a href="https://www.linkedin.com/in/cezary-bak/">https://www.linkedin.com/in/cezary-bak/</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/cezary-bak/">https://www.linkedin.com/in/cezary-bak/</a></li>
                 </ul>
             </p>
         </div>
