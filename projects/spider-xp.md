@@ -13,6 +13,7 @@ With Windows XP, I always like to play Spider Solitaire. The game was relaxing a
 
 Links:
 [GitHub](https://github.com/sekkabak/SpiderXP)
+•
 [Download](https://github.com/sekkabak/SpiderXP/releases/download/1.0.0/SpiderXP.jar)
 
 ![](images/spider-xp/03.gif)
