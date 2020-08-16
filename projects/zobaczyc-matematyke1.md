@@ -1,4 +1,4 @@
-# [Competition entry in „Zobaczyć Matematykę”(notice the math)](/)
+# Competition entry in „Zobaczyć Matematykę”(notice the math)
 
 May 2016
 

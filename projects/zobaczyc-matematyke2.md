@@ -1,4 +1,4 @@
-# [My second attempt to „Zobaczyć Matematykę” competition.](/)
+# My second attempt to „Zobaczyć Matematykę” competition
 
 May 2017
 

@@ -3,6 +3,10 @@ const projectsPage = Vue.component('projects-page', {
         return {
             projects: [
                 {
+                    id: 3,
+                    name: 'spider-xp'
+                },
+                {
                     id: 2,
                     name: 'zobaczyc-matematyke2'
                 },
