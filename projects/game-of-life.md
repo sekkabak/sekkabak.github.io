@@ -8,10 +8,9 @@ December 2020
 
 ### YouTube recommendation project idea
 
-On my YouTube recommendation page, I found this: https://www.youtube.com/watch?v=C2vgICfQawE
-That is John Conway's Game Of Life simulation with a lot of cool stuff created. So instantly I wanted to create my own. So I did it 😁
+On my YouTube recommendation page, I found this: https://www.youtube.com/watch?v=C2vgICfQawE. That is John Conway's Game Of Life simulation with a lot of cool stuff in it. So instantly I wanted to create my version of it. And I did 😁
 
-Ah also, I watch recently watch javidx9 A LOT. So I decided to do it in Windows console.
+Ah also, I've been recently watching A LOT of javidx9. That's why I decided to do it in a Windows console.
 
 Links:
 [GitHub](https://github.com/sekkabak/GameOfLife)
